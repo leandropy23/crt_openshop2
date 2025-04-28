@@ -1,0 +1,2 @@
+V	260419151453Z		1000	unknown	/C=ID/ST=Batam/O=OpenShop/OU=Rekayasa Keamanan Siber/CN=openshop.com
+V	260428084414Z		1001	unknown	/C=ID/ST=Riau Island/O=Intermediate/CN=IntermediateCA

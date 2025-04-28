@@ -1,0 +1,29 @@
+[ req ]
+default_bits        = 2048
+prompt              = no
+default_md          = sha256
+distinguished_name  = req_distinguished_name
+req_extensions      = v3_req
+
+[ req_distinguished_name ]
+C  = ID
+ST = Batam
+# L  = Batam
+O  = OpenShop
+OU = Rekayasa Keamanan Siber
+CN = openshop.com
+
+[ v3_req ]
+keyUsage = critical, digitalSignature, keyEncipherment
+extendedKeyUsage = serverAuth
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.1 = openshop.com
+DNS.2 = www.openshop.com
+
+[ usr_cert ]
+basicConstraints = CA:FALSE
+keyUsage = digitalSignature, keyEncipherment
+extendedKeyUsage = serverAuth, clientAuth
+subjectAltName = @alt_names
